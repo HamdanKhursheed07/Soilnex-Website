@@ -1,0 +1,135 @@
+.sensor-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.sensor-box{
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  transition: 0.2s;
+  border-left: 6px solid #0c8f4e;
+}
+
+.sensor-box:hover{
+  transform: translateY(-6px);
+}
+
+.sensor-box h3{
+  color: #0c8f4e;
+  margin-bottom: 8px;
+}
+
+.sensor-box p{
+  line-height: 1.4;
+}
+
+.tag{
+  display: inline-block;
+  margin-top: 12px;
+  background: #eafff2;
+  color: #0c8f4e;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.reading-card{
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.reading-top{
+  display:flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.badge{
+  background: #0c8f4e;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.table-wrap{
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+th, td{
+  padding: 12px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: left;
+}
+
+th{
+  color: #0c8f4e;
+  font-size: 15px;
+}
+
+.back-btn{
+  display: inline-block;
+  margin-top: 18px;
+  padding: 10px 14px;
+  background: #0c8f4e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.back-btn:hover{
+  background: #066c3a;
+}
+.weather-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.weather-box{
+  background: #f8fffb;
+  border: 1px solid #d7f5e4;
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.weather-box h4{
+  color: #0c8f4e;
+  margin-bottom: 6px;
+}
+
+.refresh-btn{
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #0c8f4e;
+  color: white;
+}
+
+.refresh-btn:hover{
+  background: #066c3a;
+}
+

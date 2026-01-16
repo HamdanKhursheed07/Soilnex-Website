@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather (Live) | Soilnex</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="readings.css" />
+  <script defer src="readings.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">Soilnex</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="section-title">
+    <h2>🌍 Weather Readings</h2>
+    <p style="text-align:center; margin-top:8px;">
+      Live + Past 7 Days weather data using your location.
+    </p>
+  </div>
+
+  <div class="reading-card">
+    <div class="reading-top">
+      <h3>✅ Live Weather (Current)</h3>
+      <button class="refresh-btn" onclick="loadWeather()">🔄 Refresh</button>
+    </div>
+
+    <p><b>Location:</b> <span id="weatherLocation">Detecting...</span></p>
+    <p><b>Last Updated:</b> <span id="weatherTime">--</span></p>
+
+    <div class="weather-grid">
+      <div class="weather-box">
+        <h4>🌡 Temperature</h4>
+        <p id="temp">-- °C</p>
+      </div>
+
+      <div class="weather-box">
+        <h4>💧 Humidity</h4>
+        <p id="humidity">-- %</p>
+      </div>
+
+      <div class="weather-box">
+        <h4>🌬 Wind Speed</h4>
+        <p id="wind">-- m/s</p>
+      </div>
+
+      <div class="weather-box">
+        <h4>🌧 Rain (1h)</h4>
+        <p id="rain">-- mm</p>
+      </div>
+
+      <div class="weather-box">
+        <h4>☁ Weather Status</h4>
+        <p id="status">--</p>
+      </div>
+    </div>
+
+    <hr style="margin: 25px 0; border: 0; border-top: 1px solid #e5e5e5;">
+
+    <div class="reading-top">
+      <h3>📅 Past 7 Days Weather</h3>
+      <button class="refresh-btn" onclick="loadPastWeekWeather()">🔄 Refresh</button>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Date</th>
+            <th>Max Temp</th>
+            <th>Min Temp</th>
+            <th>Rain (mm)</th>
+          </tr>
+        </thead>
+        <tbody id="pastWeatherTable"></tbody>
+      </table>
+    </div>
+
+    <a class="back-btn" href="dashboard.html">⬅ Back to Dashboard</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 Soilnex | Weather</p>
+</footer>
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    loadWeather();
+    loadPastWeekWeather();
+  });
+</script>
+
+</body>
+</html>
