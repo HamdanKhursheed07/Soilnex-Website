@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soilnex | Sensor Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="readings.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">Soilnex</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="section-title">
+    <h2>Sensor Readings Dashboard</h2>
+    <p style="text-align:center; margin-top:8px;">
+      Click any sensor to view <b>past week readings</b>.
+    </p>
+  </div>
+
+  <div class="sensor-grid">
+
+    <a class="sensor-box" href="humidity.html">
+      <h3>🌤️ Humidity Sensor</h3>
+      <p>View humidity readings (Past 7 Days)</p>
+      <span class="tag">DHT11 / DHT22</span>
+    </a>
+
+    <a class="sensor-box" href="raindrop.html">
+      <h3>🌧️ Raindrop Sensor</h3>
+      <p>View rain detection readings (Past 7 Days)</p>
+      <span class="tag">Rain Sensor Module</span>
+    </a>
+
+    <a class="sensor-box" href="moisture.html">
+      <h3>🌱 Soil Moisture Sensor</h3>
+      <p>View soil moisture readings (Past 7 Days)</p>
+      <span class="tag">Moisture Probe</span>
+    </a>
+	
+    <a class="sensor-box" href="weather.html">
+  	<h3>🌍 Weather (Live)</h3>
+  	<p>View real-time weather data</p>
+  	<span class="tag">Open-Meteo API</span>
+    </a>
+
+
+  </div>
+</div>
+
+<footer class="footer">
+  <p>© 2026 Soilnex | Dashboard</p>
+</footer>
+
+</body>
+</html>
